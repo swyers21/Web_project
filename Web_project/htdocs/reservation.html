@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Class Project -->
+<!-- Jeremy Swyers -->
+<!-- CISS298 Web Programming -->
+<!-- May 16 2015 -->
+
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href ="stylesheet.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+ <meta charset = "utf-8"><title>Reservations</title>
+</head>
+<body>
+<div id="divHead">
+
+	<div id="welcome">
+		<h1><center> Reservations </center></h1>
+	</div>
+     
+    <br />
+    
+	<!-- Navigation -->
+	<div id="div1">
+		<ul>
+			<li> <a href="cougarinn.html" name ="home" id="cougarHome"> Home </a> </li>
+			<li> <a href="aboutus.html" name ="aboutus" id="aboutUs"> About Us </a> </li>
+    		<li> <a href="contactus.html" name ="contactus" id="contactUs"> Contact Us </a> </li>
+			<li> <a href="directions.html" name ="Home" id="directions"> Directions </a> </li>
+			<li> <a href="reservation.html" name ="home" id="reservation"> Reservation </a> </li>
+			<li> <a href="theCollege.html" name ="theCollege" id="theCollege"> The College </a> </li>
+     	   <li> <a href="theCity.html" name ="theCity" id="theCity"> Around the City </a> </li>
+		</ul>
+	</div>
+    <!-- End of Navigation -->
+    
+</div><!-- End of Header -->
+
+<div class="container">
+<center>
+<h2>Please fill out the information below to schedule a Reservation:</h2><br>
+
+ <form method = post Action  = "http://localhost/reservation.php">
+ 
+ <label>First Name: <input type = "textbox" name = "firstName" size = "15"></label><br>
+ <label>Last Name: <input type = "textbox" name = "lastName" size = "15"></label><br />
+ <label>Check in Date: <input type="textbox" name ="checkIn" size = "15" /><label><br>
+<label>Check out Date: <input type="textbox" name ="checkOut" size = "15" /><label><br>
+ Room Type:
+ <select name="roomType">
+	<option value="Standard Non-smoking">Standard Non-smoking</option>
+	<option value="Double Nonsmoking">Double Nonsmoking</option>
+	<option value="Standard Smoking">Standard Smoking</option>
+	<option value="Double Smoking">Double Smoking</option>
+</select><br>
+
+ 
+ <input type = "submit" name = "submitReservation" value= "Submit" /> <br>
+ 
+ <h3>To cancel your reservation type your conformation number and select "cancel reservation"</h3><br>
+ <label> Conformation Number:</label> <input type = "textbox" name = "conformation" size = "15" /><br />
+ <input type = "submit" name = "cancelReservation" value= "Cancel Reservation" /><br>
+ 
+ <h3>To modify your reservation key in Conformation Number and choose what you would like to change:</h3>
+ 
+<label> Conformation Number:</label> <input type = "textbox" name = "conformation2" size = "15" /><br />
+<label>Check in Date: <input type="textbox" name ="checkIn2" size = "15" /><label><br>
+<label>Check out Date: <input type="textbox" name ="checkOut2" size = "15" /><label><br>
+Room Type:
+  <select name="roomType2">
+	<option value="Standard Non-smoking">Standard Non-smoking</option>
+	<option value="Double Nonsmoking">Double Nonsmoking</option>
+	<option value="Standard Smoking">Standard Smoking</option>
+	<option value="Double Smoking">Double Smoking</option>
+</select><br>
+<br><input type = "submit" name = "changeReservation" value= "Change Reservation" /><br><br><br>
+<p>Thank you - Cougar Inn.</p>
+</center>
+ </form>
+ </div>
+</body>
+</html>

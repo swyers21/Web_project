@@ -1,0 +1,70 @@
+<!doctype HTML>
+<!-- Class Project -->
+<!-- Jeremy Swyers -->
+<!-- CISS298 Web Programming -->
+<!-- May 16 2015 -->
+
+<html>
+<head> 
+<link type="text/css" rel="stylesheet" href ="stylesheet.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+ <meta charset = "utf-8"><title>Cougar Inn</title>
+</head>
+<body>
+<div id="divHead">
+
+	<div id="welcome">
+		<h1><center>Welcome to Cougar Inn!!</center></h1>
+	</div>
+    
+     <!-- Login -->
+    <div id= "rightText">
+		<form method = "get" action= "admin.html">
+			<label>UserName:</label>
+			<input type= "text" id = "userName "name ="userName">
+
+			<label>Password:</label> 
+			<input type= "text" id = "password" name = "password">
+
+			<input type = "submit" name = "submitButton" id = "submit" value = "Login">
+		</form>
+			
+	</div>
+     <!-- End of Login -->
+     
+    <br />
+    
+	<!-- Navigation -->
+	<div id="div1">
+		<ul>
+			<li> <a href="cougarinn.html" name ="home" id="cougarHome"> Home </a> </li>
+			<li> <a href="aboutus.html" name ="aboutus" id="aboutUs"> About Us </a> </li>
+    		<li> <a href="contactus.html" name ="contactus" id="contactUs"> Contact Us </a> </li>
+			<li> <a href="directions.html" name ="Home" id="directions"> Directions </a> </li>
+			<li> <a href="reservation.html" name ="home" id="reservation"> Reservation </a> </li>
+			<li> <a href="theCollege.html" name ="theCollege" id="theCollege"> The College </a> </li>
+     	   <li> <a href="theCity.html" name ="theCity" id="theCity"> Around the City </a> </li>
+		</ul>
+	</div>
+    <!-- End of Navigation -->
+    
+</div><!-- End of Header -->
+
+
+	<div id="feedback"> 
+    	<div class="container">
+    		<h2> Feedback </h2>
+    		<p><strong>Read Feedback from our Guests.</strong></p>
+			<input type= "textarea" id="displayFeedback" name = "displayFeedback" />
+			<input type= "textarea" id="textFeedback" name = "textFeeback" /><br>
+        	<input type = "submit" name = "comment" id = "comment" value = "Leave Feedback" />
+          </div>
+    </div>
+	<div id="rates">
+    	<div class="container">
+    		<h2>Pricing and Special Rates </h2>
+			<input type= "textarea" id = "specialRates" name = "SpecialRates" /><br>
+        </div>
+	</div>
+</body>
+</html>
